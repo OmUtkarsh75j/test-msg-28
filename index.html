@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My message</title>
+<style>
+    .mubor1 {
+        background-color: indianred;
+        max-width: fit-content;
+        padding: 2px;
+        border-radius: 10px;
+        align-items: center;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #video-background {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #content {
+        display: none;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: rgb(251,255,255);
+        padding: 20px;
+    }
+    #content p {
+        opacity: 0; /* initially hide the paragraphs */
+        animation: fadeIn 2s ease forwards; /* define the animation */
+        color: rgb(2, 231, 235);
+        font-size: x-large;
+        text-align: left;
+        margin-left: 45px;
+    }
+    /* Keyframes for fading in */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1 style="text-align: left; color: rgb(251,255,255); margin-left: 25px; margin-top: 20px; text-decoration: underline;">Hello My Friend @28</h1>
+
+    <video id="video-background" autoplay muted loop>
+        <source src="img/Futuristic interface _ HUD sound effects.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="content">
+        <!-- Your content goes here -->
+        <p>Have a warm welcome to my webpge Dear@28.</p>
+        <p>Thanks for being with me in my tough times.</p>
+    </div>
+
+<script>
+    setTimeout(function() {
+        document.getElementById('content').style.display = 'block';
+    }, 15000); // 15 seconds in milliseconds
+</script>
+
+</body>
+</html>
